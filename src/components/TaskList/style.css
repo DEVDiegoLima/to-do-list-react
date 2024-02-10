@@ -1,0 +1,77 @@
+.taskList-content {
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  max-width: 50%;
+  background-color: #ccc;
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+.list li {
+  padding: 2.5rem;
+  background-color: #fff;
+  color: #111;
+  margin-bottom: 2rem;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.list-item button {
+  display: flex;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.checkIcon {
+  font-size: 40px;
+}
+.trashIcon {
+  color: #b11e1e;
+  font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+  .taskList-content {
+    max-width: 80%;
+    text-align: center;
+  }
+  .checkIcon {
+    font-size: 40px;
+  }
+  .trashIcon {
+    color: #b11e1e;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 926px) {
+  .taskList-content {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .list li {
+    font-size: 1rem;
+  }
+  .checkIcon {
+    font-size: 20px;
+  }
+  .trashIcon {
+    color: #b11e1e;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .list li {
+    font-size: 0.9rem;
+    max-width: 100%;
+    padding: 15.5px 9px;
+  }
+}

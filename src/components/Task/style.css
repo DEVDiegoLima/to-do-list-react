@@ -1,0 +1,56 @@
+.task-content {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seach-task {
+  height: 3.125rem;
+  width: 50%;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 1.125rem;
+  border: 1px solid #dddd;
+  outline: none;
+}
+
+.add-icon {
+  font-size: 40px;
+  display: flex;
+  margin-left: -4rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
+}
+.add-icon:hover {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .seach-task {
+    width: 80%;
+    font-size: 1.3rem;
+    border: 2px solid #dddd;
+  }
+}
+
+@media (max-width: 926px) {
+  .task-content {
+    margin-top: 1.5rem;
+  }
+  .seach-task {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .seach-task {
+    font-size: 1rem;
+  }
+  .add-icon {
+    font-size: 30px;
+    margin-left: -2.5rem;
+  }
+}

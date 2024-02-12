@@ -1,6 +1,13 @@
 import "./style.css";
 import { CiSquarePlus } from "react-icons/ci";
-export function Task() {
+
+interface TaskProps {
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onTask: () => void;
+}
+
+export function Task({ value, onChange, onTask }: TaskProps) {
   return (
     <>
       <div className="container">
@@ -9,8 +16,10 @@ export function Task() {
             type="text"
             className="seach-task"
             placeholder="Enter your task"
+            value={value}
+            onChange={onChange}
           />
-          <button className="add-icon">
+          <button className="add-icon" onClick={onTask}>
             <CiSquarePlus />
           </button>
         </div>
